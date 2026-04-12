@@ -1,0 +1,20 @@
+<template>
+  <router-view />
+</template>
+
+<style>
+/* Reset cơ bản */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
