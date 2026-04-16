@@ -26,7 +26,8 @@
             </td>
 
             <td>
-              <span v-if="item.status === 'Đang mượn' || item.status === 'Đã trả'">
+              <span v-if="item.status === 'Đang mượn' || item.status === 'Đã trả'"
+              :class="{ 'text-danger': checkOverdueState(item) !== 'normal' }">
                 {{ formatDate(item.hanTra) }}
               </span>
               <span v-else>-</span>
@@ -83,6 +84,26 @@ const filteredBorrows = computed(() => {
     (item) => item.bookId?.tenSach?.toLowerCase().includes(query)
   );
 });
+
+const checkOverdueState = (item) => {
+  if (!item.hanTra) return "normal";
+  
+  const hanTraDate = new Date(item.hanTra);
+  hanTraDate.setHours(0, 0, 0, 0);
+
+  if (item.status === "Đang mượn") {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return today > hanTraDate ? "overdue" : "normal";
+  }
+  if (item.status === "Đã trả" && item.ngayTra) {
+    const ngayTraDate = new Date(item.ngayTra);
+    ngayTraDate.setHours(0, 0, 0, 0);
+    return ngayTraDate > hanTraDate ? "returned_late" : "normal";
+  }
+  
+  return "normal";
+};
 
 async function fetchMyBorrows() {
   try {
