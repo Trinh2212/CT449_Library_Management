@@ -1,7 +1,7 @@
 <template>
   <div class="admin-page">
     <div class="page-header">
-      <h3>Danh sách nhà xuất bản</h3>
+      <h3>Danh sách NXB</h3>
       <searchBar />
       <button @click="openModal()" class="btn btn-primary">
         + Thêm NXB mới
