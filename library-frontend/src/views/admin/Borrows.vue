@@ -188,7 +188,12 @@ function checkOverdueState(item) {
 
 const filteredBorrows = computed(() => {
   const query = (route.query.q || "").toString().toLowerCase().trim();
-  let filtered = borrows.value;
+  // let filtered = borrows.value;
+  let filtered = [...borrows.value].sort((a, b) => {
+    const dateA = new Date(a.createdAt || 0).getTime();
+    const dateB = new Date(b.createdAt || 0).getTime();
+    return dateB - dateA;
+  });
 
   if (filterStatus.value !== "Tất cả") {
     if (filterStatus.value === "Quá hạn") {
