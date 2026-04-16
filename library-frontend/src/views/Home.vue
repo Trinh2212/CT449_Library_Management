@@ -93,9 +93,12 @@ onMounted(async () => {
   
     const myBorrows = res.data.filter(item => {
       const idFromBorrow = item.borrowerId?._id || item.borrowerId?.maDocGia || item.borrowerId;
+      const roleFromBorrow = item.borrowerId?.role || (item.borrowerId?.msnv ? 'admin' : 'user');
+
       const idFromUser = user._id || user.maDocGia || user.msnv;
-      
-      return idFromBorrow === idFromUser;
+      const roleFromUser = user.role || (user.msnv ? 'admin' : 'user');
+      const isSamePerson = (idFromBorrow === idFromUser) && (roleFromBorrow === roleFromUser);
+      return isSamePerson;
     });
     const hasOverdue = myBorrows.some(item => {
       if (item.status !== "Đang mượn" || !item.hanTra) {
