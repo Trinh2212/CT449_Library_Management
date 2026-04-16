@@ -11,10 +11,10 @@
 
       <div class="footer-section right-section">
         <div class="links-wrapper">
-          <h3>Điều Hướng</h3>
+          <h3>Liên Hệ</h3>
           <ul>
             <li>
-              <router-link to="/">
+              <a href="#">
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -26,14 +26,14 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-                Trang chủ</router-link
-              >
+                Email: admin123@library.com
+              </a>
             </li>
             <li>
-              <router-link to="/books">
+              <a href="#">
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -45,14 +45,14 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                   />
                 </svg>
-                Tất cả sách</router-link
-              >
+                SĐT: 0974 378 809
+              </a>
             </li>
             <li>
-              <router-link to="/auth/login">
+              <a href="#">
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -64,17 +64,21 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                   />
                 </svg>
-                Đăng nhập</router-link
-              >
+                Địa chỉ: Phường Ninh Kiều, TP. Cần Thơ
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p>&copy; 2026 Quản Lý Thư Viện - Học Phần Phát Triển Ứng Dụng Web</p>
     </div>

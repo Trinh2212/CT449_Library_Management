@@ -93,14 +93,13 @@ const booksData = [
       "https://cdn1.fahasa.com/media/flashmagazine/images/page_images/nha_gia_kim_tai_ban_2020/2024_03_20_18_29_19_1-390x510.jpg",
   },
   {
-    tenSach: "Đắc Nhân Tâm",
-    tacGia: "Dale Carnegie",
+    tenSach: "Thám tử lừng danh Conan",
+    tacGia: "Gosho Aoyama",
     donGia: 89000,
     soQuyen: 25,
     namXuatBan: 2020,
     maNXB: 5,
-    hinhAnh:
-      "https://cdn1.fahasa.com/media/catalog/product/d/n/dntttttuntitled.jpg?_gl=1*y4603o*_ga*MTQ3NTcyMjI2MS4xNzc1MzAzMTU3*_ga_D3YYPWQ9LN*czE3NzUzMDMxNTYkbzEkZzEkdDE3NzUzMDMzOTYkajEzJGwwJGgw*_gcl_au*NzY0OTU0OTQ4LjE3NzUzMDMxNTY.*_ga_460L9JMC2G*czE3NzUzMDMxNTYkbzEkZzEkdDE3NzUzMDMzOTckajEyJGwwJGgxNzkzODY1MTQ3",
+    hinhAnh: "https://upload.wikimedia.org/wikipedia/vi/d/d9/ConanMovie24.jpg",
   },
   {
     tenSach: "Quẳng Gánh Lo Đi Và Vui Sống",
@@ -144,24 +143,24 @@ const booksData = [
       "https://cdn1.fahasa.com/media/catalog/product/8/9/8936107813361.jpg?_gl=1*77cd6v*_gcl_au*NzY0OTU0OTQ4LjE3NzUzMDMxNTY.*_ga*MTQ3NTcyMjI2MS4xNzc1MzAzMTU3*_ga_D3YYPWQ9LN*czE3NzUzMDMxNTYkbzEkZzEkdDE3NzUzMDM1NDUkajIwJGwwJGgw*_ga_460L9JMC2G*czE3NzUzMDMxNTYkbzEkZzEkdDE3NzUzMDM1NDYkajE5JGwwJGgxNzkzODY1MTQ3",
   },
   {
-    tenSach: "Marketing Căn Bản",
-    tacGia: "Philip Kotler",
+    tenSach: "Cậu bé bút chì",
+    tacGia: "Crayon Shin-chan",
     donGia: 130000,
     soQuyen: 9,
     namXuatBan: 2019,
     maNXB: 4,
     hinhAnh:
-      "https://salt.tikicdn.com/cache/750x750/ts/product/e6/30/15/f04495630c3c7f4a2e9f457c5474c1be.jpg.webp",
+      "https://bizweb.dktcdn.net/100/405/289/products/dieu-ki-dieu-cua-vu-tru.jpg?v=1607478090437",
   },
   {
-    tenSach: "Tâm Lý Học Đám Đông",
-    tacGia: "Gustave Le Bon",
+    tenSach: "Mộ Đom Đóm",
+    tacGia: "Nosaka Akiyuki",
     donGia: 85000,
     soQuyen: 13,
     namXuatBan: 2018,
     maNXB: 3,
     hinhAnh:
-      "https://www.netabooks.vn/Data/Sites/1/Product/24175/tam-ly-hoc-dam-dong-tai-ban-2020-01.jpg",
+      "https://www.netabooks.vn/Data/Sites/1/Product/36210/mo-dom-dom.jpg",
   },
   {
     tenSach: "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
